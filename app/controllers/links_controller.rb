@@ -4,7 +4,7 @@ class LinksController < ApplicationController
   # GET /links
   # GET /links.json
   def index
-    @links = Link.all.order("created_at DESC")
+    @links = Link.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 5)
   end
 
   # GET /links/1

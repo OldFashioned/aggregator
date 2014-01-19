@@ -20,5 +20,6 @@
       </div>
     </div>
   <% end %>
-  <%= link_to 'New Link', new_link_path %>
+  <%= link_to 'New Link', new_link_path %><br />
+  <%= will_paginate @links %>
 </div>
