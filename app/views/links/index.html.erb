@@ -9,7 +9,7 @@
           </div>
         </div>
         <div class="panel-body">
-          <p><strong>URL: </strong><%= link.url %></p>
+          <p><strong>URL: </strong><%= link_to link.sanitize_url, link.url, :target => '_blank' %></p>
           <p><%= link.description %></p>
         </div>
         <div class="panel-footer">
